@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    text-align: center;
+}
+#usd-amount {
+    margin-top: 20px;
+    padding: 10px;
+    width: 200px;
+}
+#convert-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+#result {
+    margin-top: 20px;
+}
