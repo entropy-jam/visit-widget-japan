@@ -24,3 +24,10 @@ body {
 #result {
     margin-top: 20px;
 }
+
+#toggle-currency {
+    display: block; /* Ensures the button is a block-level element */
+    margin: 20px auto; /* Adds top and bottom margin for spacing, and auto margin for horizontal centering */
+    padding: 10px 20px; /* Matches the padding of the convert button for consistency */
+    width: fit-content; /* This will make the width of the button fit its content, aiding in centering */
+}
