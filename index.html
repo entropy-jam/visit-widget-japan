@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Include Chart.js for the interactive chart feature -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
@@ -13,7 +15,11 @@
         <button id="convert-btn">Convert</button>
         <button id="toggle-currency">Toggle Currency</button>
         <div id="result"></div>
+        <!-- Place to display the chart -->
+        <canvas id="exchangeRateChart"></canvas>
     </div>
     <script src="convert-currency.js"></script>
+    <!-- Include the new JavaScript file for the exchange rate chart -->
+    <script src="exchangeRateChart.js"></script>
 </body>
 </html>
