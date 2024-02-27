@@ -9,15 +9,26 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="shadow-box">
-        <div class="container">
-            <h1 id="currency-label">$USD to ¥JPY Converter</h1>
-            <input type="number" id="usd-amount" placeholder="Enter USD amount" />
-            <button id="convert-btn">Convert</button>
-            <button id="toggle-currency">Toggle Currency</button>
-            <div id="result"></div>
-            <!-- Place to display the chart -->
-            <canvas id="exchangeRateChart"></canvas>
+    <div class="main-content">
+        <div class="shadow-box">
+            <div class="container">
+                <h1 id="currency-label">$USD to ¥JPY Converter</h1>
+                <input type="number" id="usd-amount" placeholder="Enter USD amount" />
+                <button id="convert-btn">Convert</button>
+                <button id="toggle-currency">Toggle Currency</button>
+                <div id="result"></div>
+                <!-- Place to display the chart -->
+                <canvas id="exchangeRateChart"></canvas>
+            </div>
+        </div>
+        <div class="disclaimer">
+            <p>
+                Disclaimer: The administrator of this website makes no representation or warranty, 
+                express or implied, regarding the accuracy, completeness, or reliability of the information contained herein. 
+                Users of this website should not rely solely on the information provided for making decisions. 
+                The administrator shall not be liable for any errors or omissions in the content of this website 
+                or for any actions taken in reliance thereon.
+            </p>
         </div>
     </div>
     <script src="convert-currency.js"></script>

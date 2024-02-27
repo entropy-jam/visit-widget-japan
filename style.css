@@ -11,7 +11,7 @@ body {
 }
 .shadow-box {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    margin: 0 auto;
     padding: 20px;
     width: calc(100% - 40px); /* Make it a bit wider */
     max-width: 800px; /* Prevents it from becoming too wide on larger screens */
@@ -41,4 +41,14 @@ body {
 }
 canvas#exchangeRateChart {
     margin-top: 20px; /* Ensures there's space above the chart, adjust as needed */
+}
+.disclaimer {
+    width: 60%;
+    margin: 10vh auto 0 auto; /* Adjust top margin to center between shadow box and bottom of page */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-style: italic;
+    color: lightgray; /* Adjust as needed to get the desired shade of gray */
+    font-size: 0.75rem; /* Adjust size as needed */
 }
