@@ -6,3 +6,5 @@ https://amachine.beehiiv.com/
 
 
 Clone and edit to learn practice APIs yourself, enjoy developing!
+
+test
