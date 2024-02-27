@@ -13,15 +13,15 @@
             <h1 id="currency-label">Currency Converter</h1>
             <div class="input-wrapper">
                 <div class="input-group">
-                    <input type="number" id="usd-amount" placeholder="Enter USD amount">
+                    <input type="number" id="usd-amount" placeholder="Enter USD">
                     <label for="usd-amount">USD</label>
                 </div>
+                <button id="convert-btn">Convert</button>
                 <div class="input-group">
-                    <input type="number" id="jpy-amount" placeholder="Enter JPY amount">
+                    <input type="number" id="jpy-amount" placeholder="Enter JPY">
                     <label for="jpy-amount">JPY</label>
                 </div>
             </div>
-            <button id="convert-btn">Convert</button>
             <div id="result"></div>
             <canvas id="exchangeRateChart"></canvas>
         </div>
@@ -30,9 +30,7 @@
     <script src="convert-currency.js"></script>
     <footer>
         <p class="disclaimer">
-            Disclaimer: The administrator of this website makes no representation or warranty, 
-            express or implied, regarding the accuracy, completeness, or reliability of the information contained herein. 
-            Users of this website should not rely solely on the information provided for making decisions. 
+            Disclaimer: The administrator of this website makes no guarantee regarding the accuracy or reliability of the information contained herein. 
             The administrator shall not be liable for any errors or omissions in the content of this website 
             or for any actions taken in reliance thereon.
         </p>

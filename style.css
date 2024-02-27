@@ -28,30 +28,42 @@ body {
 }
 .input-wrapper {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 .input-group {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 10px;
+    margin: 0 20px; /* Adds spacing around the inputs */
 }
 .input-group input {
-    margin: 5px;
-    padding: 10px; /* Adjust padding if needed */
-    font-size: 16px; /* Adjust font size for better readability */
-    border-radius: 4px; /* Slightly rounded corners */
-    width: 200px; /* Match the original width */
+    width: 200px; /* Matches the original input width */
+    padding: 10px;
+    margin-bottom: 5px; /* Space between input and label */
+    font-size: 1rem; /* Larger font size for better readability */
+    /* Additional styles for a nicer look */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
 }
 
-
+.input-group label {
+    text-align: center;
+    display: none; /* Hides the label */
+}
 #convert-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
     padding: 10px 20px;
-    margin-top: 20px;
+    margin: 0 20px; /* Adds spacing around the button */
+    border-radius: 4px;
 }
 #result, canvas#exchangeRateChart {
     margin-top: 20px;
+    font-size: 1.25rem;
 }
 .disclaimer {
     width: 60%;
