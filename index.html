@@ -9,14 +9,16 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1 id="currency-label">$USD to ¥JPY Converter</h1>
-        <input type="number" id="usd-amount" placeholder="Enter USD amount" />
-        <button id="convert-btn">Convert</button>
-        <button id="toggle-currency">Toggle Currency</button>
-        <div id="result"></div>
-        <!-- Place to display the chart -->
-        <canvas id="exchangeRateChart"></canvas>
+    <div class="shadow-box">
+        <div class="container">
+            <h1 id="currency-label">$USD to ¥JPY Converter</h1>
+            <input type="number" id="usd-amount" placeholder="Enter USD amount" />
+            <button id="convert-btn">Convert</button>
+            <button id="toggle-currency">Toggle Currency</button>
+            <div id="result"></div>
+            <!-- Place to display the chart -->
+            <canvas id="exchangeRateChart"></canvas>
+        </div>
     </div>
     <script src="convert-currency.js"></script>
     <!-- Include the new JavaScript file for the exchange rate chart -->

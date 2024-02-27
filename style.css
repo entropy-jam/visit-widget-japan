@@ -9,6 +9,16 @@ body {
     height: 100vh;
     margin: 0;
 }
+.shadow-box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: calc(100% - 40px); /* Make it a bit wider */
+    max-width: 800px; /* Prevents it from becoming too wide on larger screens */
+    border-radius: 10px; /* Rounds the corners */
+    display: block;
+    background-color: white;
+}
 .container {
     text-align: center;
 }
@@ -17,17 +27,18 @@ body {
     padding: 10px;
     width: 200px;
 }
-#convert-btn {
+#convert-btn, #toggle-currency {
     padding: 10px 20px;
     margin-top: 10px;
+}
+#toggle-currency {
+    display: block;
+    margin: 20px auto 30px; /* Increased bottom margin for space before the chart */
+    width: fit-content;
 }
 #result {
     margin-top: 20px;
 }
-
-#toggle-currency {
-    display: block; /* Ensures the button is a block-level element */
-    margin: 20px auto; /* Adds top and bottom margin for spacing, and auto margin for horizontal centering */
-    padding: 10px 20px; /* Matches the padding of the convert button for consistency */
-    width: fit-content; /* This will make the width of the button fit its content, aiding in centering */
+canvas#exchangeRateChart {
+    margin-top: 20px; /* Ensures there's space above the chart, adjust as needed */
 }
