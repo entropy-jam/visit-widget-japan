@@ -4,6 +4,7 @@
 body {
     font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -13,42 +14,51 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     padding: 20px;
-    width: calc(100% - 40px); /* Make it a bit wider */
-    max-width: 800px; /* Prevents it from becoming too wide on larger screens */
-    border-radius: 10px; /* Rounds the corners */
-    display: block;
+    width: calc(100% - 40px);
+    max-width: 800px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
 }
 .container {
     text-align: center;
+    width: 100%;
 }
-#usd-amount {
-    margin-top: 20px;
-    padding: 10px;
-    width: 200px;
+.input-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
-#convert-btn, #toggle-currency {
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+.input-group input {
+    margin: 5px;
+    padding: 10px; /* Adjust padding if needed */
+    font-size: 16px; /* Adjust font size for better readability */
+    border-radius: 4px; /* Slightly rounded corners */
+    width: 200px; /* Match the original width */
+}
+
+
+#convert-btn {
     padding: 10px 20px;
-    margin-top: 10px;
-}
-#toggle-currency {
-    display: block;
-    margin: 20px auto 30px; /* Increased bottom margin for space before the chart */
-    width: fit-content;
-}
-#result {
     margin-top: 20px;
 }
-canvas#exchangeRateChart {
-    margin-top: 20px; /* Ensures there's space above the chart, adjust as needed */
+#result, canvas#exchangeRateChart {
+    margin-top: 20px;
 }
 .disclaimer {
     width: 60%;
-    margin: 10vh auto 0 auto; /* Adjust top margin to center between shadow box and bottom of page */
+    margin: 20px auto;
     padding: 10px;
-    box-sizing: border-box;
     text-align: center;
     font-style: italic;
-    color: lightgray; /* Adjust as needed to get the desired shade of gray */
-    font-size: 0.75rem; /* Adjust size as needed */
+    color: lightgray;
+    font-size: 0.75rem;
 }

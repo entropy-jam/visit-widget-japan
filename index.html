@@ -5,34 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Include Chart.js for the interactive chart feature -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="main-content">
-        <div class="shadow-box">
-            <div class="container">
-                <h1 id="currency-label">$USD to ¥JPY Converter</h1>
-                <input type="number" id="usd-amount" placeholder="Enter USD amount" />
-                <button id="convert-btn">Convert</button>
-                <button id="toggle-currency">Toggle Currency</button>
-                <div id="result"></div>
-                <!-- Place to display the chart -->
-                <canvas id="exchangeRateChart"></canvas>
+    <div class="shadow-box">
+        <div class="container">
+            <h1 id="currency-label">Currency Converter</h1>
+            <div class="input-wrapper">
+                <div class="input-group">
+                    <input type="number" id="usd-amount" placeholder="Enter USD amount">
+                    <label for="usd-amount">USD</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="jpy-amount" placeholder="Enter JPY amount">
+                    <label for="jpy-amount">JPY</label>
+                </div>
             </div>
-        </div>
-        <div class="disclaimer">
-            <p>
-                Disclaimer: The administrator of this website makes no representation or warranty, 
-                express or implied, regarding the accuracy, completeness, or reliability of the information contained herein. 
-                Users of this website should not rely solely on the information provided for making decisions. 
-                The administrator shall not be liable for any errors or omissions in the content of this website 
-                or for any actions taken in reliance thereon.
-            </p>
+            <button id="convert-btn">Convert</button>
+            <div id="result"></div>
+            <canvas id="exchangeRateChart"></canvas>
         </div>
     </div>
-    <script src="convert-currency.js"></script>
-    <!-- Include the new JavaScript file for the exchange rate chart -->
     <script src="exchangeRateChart.js"></script>
+    <script src="convert-currency.js"></script>
+    <footer>
+        <p class="disclaimer">
+            Disclaimer: The administrator of this website makes no representation or warranty, 
+            express or implied, regarding the accuracy, completeness, or reliability of the information contained herein. 
+            Users of this website should not rely solely on the information provided for making decisions. 
+            The administrator shall not be liable for any errors or omissions in the content of this website 
+            or for any actions taken in reliance thereon.
+        </p>
+    </footer>
 </body>
 </html>
