@@ -52,15 +52,21 @@ body {
     text-align: center;
     display: none; /* Hides the label */
 }
-#convert-btn {
-    background-color: green;
+/* Button styling */
+.convert-button, .translate-button {
+    padding: 10px 15px;
+    background-color: #007bff;
     color: white;
     border: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    margin: 0 20px; /* Adds spacing around the button */
     border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
+
+.convert-button:hover, .translate-button:hover {
+    background-color: #0056b3;
+}
+
 #result, canvas#exchangeRateChart {
     margin-top: 20px;
     font-size: 1.25rem;
@@ -73,4 +79,26 @@ body {
     font-style: italic;
     color: lightgray;
     font-size: 0.75rem;
+}
+.language-converter-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.language-converter-container textarea {
+    width: 45%;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.language-converter-container button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+}
+
+#translation-output {
+    margin-top: 20px;
+    font-size: 1.1em;
 }
