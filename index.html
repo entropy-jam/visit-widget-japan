@@ -13,20 +13,22 @@
     </header>
     <div class="shadow-box">
         <div class="container">
-            <!-- Currency Converter Section -->
+            <!-- Adjusted Currency Converter Section -->
             <h2>Currency Converter</h2>
-            <div class="input-wrapper">
-                <div class="input-group">
-                    <input type="number" id="usd-amount" placeholder="Enter USD">
-                    <label for="usd-amount">USD</label>
+                <div class="input-wrapper">
+                    <div class="input-group">
+                        <input type="number" id="usd-amount" placeholder="Enter USD">
+                        <label for="usd-amount">USD</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="number" id="jpy-amount" placeholder="Enter JPY">
+                        <label for="jpy-amount">JPY</label>
+                    </div>
                 </div>
-                <button id="convert-btn" class="convert-button">Convert</button>
-                <div class="input-group">
-                    <input type="number" id="jpy-amount" placeholder="Enter JPY">
-                    <label for="jpy-amount">JPY</label>
-                </div>
-            </div>
+        <!-- Moved the Convert button outside the input-wrapper for consistent styling -->
+            <button id="convert-btn" class="translate-button">Convert</button>
             <div id="result"></div>
+
             
             <!-- Exchange Rate Graph Section -->
             <canvas id="exchangeRateChart"></canvas>

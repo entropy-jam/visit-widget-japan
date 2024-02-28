@@ -66,7 +66,16 @@ body {
     display: none; /* Hides the label */
 }
 /* Button styling */
-.convert-button, .translate-button {
+.convert-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.translate-button {
     padding: 10px 15px;
     background-color: #007bff;
     color: white;
@@ -115,3 +124,21 @@ body {
     margin-top: 20px;
     font-size: 1.1em;
 }
+/* Media query for devices with a max-width of 768px */
+@media (max-width: 768px) {
+    .input-wrapper {
+      flex-direction: column;
+    }
+  
+    .input-group {
+      width: auto; /* Resets the width to default to make it responsive */
+      margin: 10px 0; /* Adds vertical spacing */
+    }
+  
+    /* Ensures buttons are not too wide on mobile */
+    .convert-button, .translate-button{
+      margin: 0 auto; /* Centers the buttons horizontally */
+    }
+  }
+  
+  
