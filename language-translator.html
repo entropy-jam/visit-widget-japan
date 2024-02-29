@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Visit Widget Japan🇯🇵</h1> 
+    </header>
+    <div class="shadow-box">
+        <div class="container">
+            <h2>Language Converter</h2>
+            <div class="language-converter-container">
+                <textarea id="input-english" placeholder="Enter English text here"></textarea>
+                <textarea id="input-japanese" placeholder="Enter Japanese text here"></textarea>
+                <button onclick="translateText()" class="translate-button">Translate</button>
+                <div id="translation-output"></div>
+            </div>
+        </div>
+    </div>
+    <script src="translator.js"></script>
+</body>
+</html>

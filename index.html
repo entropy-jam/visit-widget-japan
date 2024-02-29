@@ -3,58 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency and Language Converter</title>
+    <title>App Home</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header class="page-header">
-        <h1>Visit Widget Japan🇯🇵</h1>
+        <h1>Visit Widget Japan🇯🇵</h1> 
     </header>
-    <div class="shadow-box">
-        <div class="container">
-            <!-- Adjusted Currency Converter Section -->
-            <h2>Currency Converter</h2>
-                <div class="input-wrapper">
-                    <div class="input-group">
-                        <input type="number" id="usd-amount" placeholder="Enter USD">
-                        <label for="usd-amount">USD</label>
-                    </div>
-                    <div class="input-group">
-                        <input type="number" id="jpy-amount" placeholder="Enter JPY">
-                        <label for="jpy-amount">JPY</label>
-                    </div>
-                </div>
-        <!-- Moved the Convert button outside the input-wrapper for consistent styling -->
-            <button id="convert-btn" class="translate-button">Convert</button>
-            <div id="result"></div>
-
-            
-            <!-- Exchange Rate Graph Section -->
-            <canvas id="exchangeRateChart"></canvas>
-            
-            <!-- Language Converter Section -->
-            <h2>Language Converter</h2>
-            <div class="language-converter-container">
-                <textarea id="input-english" placeholder="Enter English text here"></textarea>
-                <textarea id="input-japanese" placeholder="Enter Japanese text here"></textarea>
-                <button onclick="translateText()" class="translate-button">Translate</button>
-                <div id="translation-output"></div>
-            </div>
-        </div>
+    <div class="navigation">
+        <h2><a href="currency-converter.html">💵 Currency Converter</a></h2>
+        <h2><a href="language-translator.html">🗣️ Language Translator</a></h2>
+        <!-- Add more links as needed -->
     </div>
-    <script src="exchangeRateChart.js"></script>
-    <script src="convert-currency.js"></script>
-    <script src="translator.js"></script>
-
-    <!-- Include the new JavaScript file for language conversion here -->
-    <script src="translate-language.js"></script>
-    <footer>
-        <p class="disclaimer">
-            Disclaimer: The administrator of this website makes no guarantee regarding the accuracy or reliability of the information contained herein. 
-            The administrator shall not be liable for any errors or omissions in the content of this website 
-            or for any actions taken in reliance thereon.
-        </p>
-    </footer>
 </body>
 </html>

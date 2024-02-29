@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="page-header">
+        <h1>Visit Widget Japan🇯🇵</h1> 
+    </header>
+    <div class="shadow-box">
+        <div class="container">
+            <h2>Currency Converter</h2>
+            <div class="input-wrapper">
+                <div class="input-group">
+                    <input type="number" id="usd-amount" placeholder="Enter USD">
+                    <label for="usd-amount">USD</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" id="jpy-amount" placeholder="Enter JPY">
+                    <label for="jpy-amount">JPY</label>
+                </div>
+            </div>
+            <button id="convert-btn" class="translate-button">Convert</button>
+            <div id="result"></div>
+            <canvas id="exchangeRateChart"></canvas>
+        </div>
+    </div>
+    <script src="convert-currency.js"></script>
+    <script src="exchangeRateChart.js"></script>
+</body>
+</html>
