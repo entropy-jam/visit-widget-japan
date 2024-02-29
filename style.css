@@ -124,6 +124,19 @@ body {
     margin-top: 20px;
     font-size: 1.1em;
 }
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f9f9f9; /* or any color you prefer */
+    color: black; /* or any color you prefer */
+    text-align: center;
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+
 /* Media query for devices with a max-width of 768px */
 @media (max-width: 768px) {
     .input-wrapper {
