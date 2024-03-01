@@ -125,6 +125,17 @@ body {
     font-size: 1.1em;
 }
 
+#openweathermap-widget-11 {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-weather-widget {
+    align-items: center;
+}
+
 footer {
     position: fixed;
     left: 0;
